@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void greet(View view) {
-        TextView quantityTextView = (TextView) findViewById(
+        TextView greetingTextView = (TextView) findViewById(
                 R.id.greeting_text_view);
         TextView nameTextView = (TextView) findViewById(
                 R.id.name_text_view);
         if (nameTextView.getText().length() != 0) {
-            quantityTextView.setText("Hello, " + nameTextView.getText());
+            greetingTextView.setText("Hello, " + nameTextView.getText());
         } else {
             displayToast();
         }
